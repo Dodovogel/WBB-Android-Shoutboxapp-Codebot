@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg3"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/cmdSend"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/txtMessage"
+        android:layout_alignRight="@+id/txtMessage"
+        android:layout_below="@+id/txtMessage"
+        android:background="@android:drawable/btn_default"
+        android:drawableLeft="@drawable/send"
+        android:gravity="center"
+        android:linksClickable="true"
+        android:paddingRight="45dp"
+        android:text="@string/cmdSend" />
+
+    <EditText
+        android:id="@+id/txtMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:layout_below="@+id/txtUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:hint="@string/hintMessage" />
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:layout_alignLeft="@+id/txtMessage"
+        android:layout_alignRight="@+id/pbReadChat"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/hintUsername"
+        android:inputType="textFilter|textNoSuggestions" />
+
+    <Button
+        android:id="@+id/cmdMenu"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/txtUsername"
+        android:layout_alignRight="@+id/txtMessage"
+        android:layout_alignTop="@+id/txtUsername"
+        android:layout_toRightOf="@+id/txtUsername"
+        android:background="@android:drawable/btn_default"
+        android:text="@string/menu" />
+
+    <TextView
+        android:id="@+id/lblVerlauf"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cmdRefresh"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/cmdSend"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:autoLink="all"
+        android:background="@drawable/border"
+        android:maxLines="100"
+        android:scrollbars="horizontal"
+        android:text="@string/readerStandard"
+        android:textSize="@dimen/verlaufsize" />
+
+    <TextView
+        android:id="@+id/lblAutorefresh"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cmdRefresh"
+        android:layout_alignBottom="@+id/cmdRefresh"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/ar_activated"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FF0000"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/pbReadChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/cmdRefresh"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@android:drawable/btn_default"
+        android:drawableLeft="@drawable/refresh"
+        android:gravity="bottom|center_vertical|center_horizontal"
+        android:minHeight="48dip"
+        android:paddingRight="45dp"
+        android:text="@string/refresh" />
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Einstellungen"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+        <PreferenceCategory
+                android:title="@string/autorefresh2"
+                android:textSize="9dp">
+                <CheckBoxPreference
+                    android:title="@string/autorefresh"
+                    android:key="ar_enable" android:summary="Soll die App, nach einem festgelegten Zeitpunkt, automatisch laden?"/>
+                <EditTextPreference
+                	android:summary="Intervall"
+                	android:key="txtArIntervall"
+                	android:inputType="number" />
+        </PreferenceCategory>
+        <PreferenceCategory
+                android:title="@string/datasaving">
+				<CheckBoxPreference
+                    android:title="@string/keeploggedin"
+                    android:enabled="false"
+                    android:defaultValue="true"
+                    android:key="cbKeeploggedin" />
+		</PreferenceCategory>
+        <PreferenceCategory
+            android:title="@string/chatsettings">
+			<CheckBoxPreference 
+                android:title="@string/refreshcircle"
+                android:summary="Soll eine Ladeanimation beim Ladevorgang gezeigt werden?"
+                android:key="cbShowProgressCircle"
+                android:defaultValue="false" />
+            <CheckBoxPreference 
+                android:title="@string/time"
+                android:summary="Soll die Zeit vor einem Benutzernamen gezeigt werden?"
+                android:key="cbShowTime"
+                android:defaultValue="false" />
+			<CheckBoxPreference 
+                android:title="@string/chatdirection"
+                android:summary="ACHTUNG: Noch nicht vollständig entwickelt!"
+                android:enabled="false"
+                android:key="cbChangeChatDirection"
+                android:defaultValue="false" />
+            <EditTextPreference
+                android:summary="@string/textsize"
+                android:key="txtTextSize"
+                android:inputType="number" />
+        </PreferenceCategory>
+</PreferenceScreen>

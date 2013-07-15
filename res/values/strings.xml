@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Codebot Shoutboxapp</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="hintUsername">Benutzername</string>
+    <string name="hintMessage">Nachricht</string>
+    <string name="cmdSend">Senden</string>
+    <string name="refresh">Laden</string>
+    <string name="cmdLogin">Einloggen</string>
+    <string name="hintPass">Passwort</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="saveusername">Benutzer speichern?</string>
+    <string name="menu">Einstellungen</string>
+    <string name="autorefresh">Automatisches Laden</string>
+    <string name="ar_activated">Automatisches Laden aktiviert!</string>
+    <string name="settings">Einstellungen</string>
+    <string name="autorefresh2">Automatisches Laden</string>
+    <string name="datasaving">Speichern</string>
+    <string name="keeploggedin">Eingeloggt bleiben</string>
+    <string name="chatsettings">Chat-Einstellungen</string>
+    <string name="time">Zeit anzeigen</string>
+    <string name="textsize">Schriftgröße</string>
+    <string name="title_activity_settings">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="refreshcircle">Animation</string>
+    <string name="chatdirection">Chatverlauf umkehren</string>
+    <string name="readerStandard">codebot.de - Shoutboxapp! Version: 1.1.3 (Open Source)</string>
+    <string name="copyright">Dodovogel</string>
+
+</resources>
