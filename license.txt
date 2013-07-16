@@ -1,10 +1,10 @@
 Software License Agreement
-_____________________________________________________________________
-
-The following project is under the terms of the BSD 2-Clause License:
 ---------------------------------------------------------------------
 
-Copyright (c) 2013, Jonathan Berg (Dodovogel) & Phillip Nowak (xChucky) - codebot.de
+The following project is under the terms of the BSD 2-Clause License:
+_____________________________________________________________________
+
+Copyright (c) 2013, Jonathan Berg (Dodovogel) & Phillip Nowak (xChucky) from codebot.de
 
 All rights reserved.
 
